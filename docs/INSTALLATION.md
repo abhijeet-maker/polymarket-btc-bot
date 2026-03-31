@@ -11,4 +11,5 @@
 ```bash
 git clone https://github.com/abhijeet-maker/polymarket-btc-bot.git
 cd polymarket-btc-bot
-chmo
+chmod +x scripts/setup.sh
+./scripts/setup.sh
