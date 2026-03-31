@@ -16,10 +16,10 @@ if errorlevel 1 (
 )
 
 echo Creating virtual environment...
-python -m venv venv
+python -m venv .venv
 
 echo Activating virtual environment...
-call venv\Scripts\activate.bat
+call .venv\Scripts\activate.bat
 
 echo Installing dependencies...
 pip install --upgrade pip
@@ -46,6 +46,6 @@ echo 2. Run: run_dev.bat (for testing)
 echo 3. Run: run_live.bat (for live trading - CAREFUL!)
 echo.
 echo To activate venv manually:
-echo   venv\Scripts\activate
+echo   .venv\Scripts\activate
 echo.
 pause

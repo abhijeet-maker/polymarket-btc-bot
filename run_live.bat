@@ -13,14 +13,14 @@ pause
 
 cd /d %~dp0
 
-if not exist venv (
+if not exist .venv (
     echo Creating virtual environment...
-    python -m venv venv
+    python -m venv .venv
 )
 
-call venv\Scripts\activate.bat
+call .venv\Scripts\activate.bat
 
 set DRY_RUN=false
-python -m src.bot
+.\.venv\Scripts\python.exe -m src.bot
 
 pause
